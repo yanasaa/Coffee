@@ -16,15 +16,23 @@ class Header {
         <nav class="header-menu_items">
           <ul>
             <li class="header-menu_item">
-              <a class="link-line" href="/#favorite-coffee"
+              <a class="link-line" href="${
+                currentUrl.endsWith("index.html")
+                  ? "#favorite-coffee"
+                  : "/#favorite-coffee"
+              }"
                 >Favorite coffee</a
               >
             </li>
             <li class="header-menu_item">
-              <a class="link-line" href="/#about">About</a>
+              <a class="link-line" href="${
+                currentUrl.endsWith("index.html") ? "#about" : "/#about"
+              }">About</a>
             </li>
             <li class="header-menu_item">
-              <a class="link-line" href="/#mobile">Mobile app</a>
+              <a class="link-line" href="${
+                currentUrl.endsWith("index.html") ? "#mobile" : "/#mobile"
+              }">Mobile app</a>
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="#contacts">Contact us</a>
@@ -33,7 +41,7 @@ class Header {
         </nav>
         <div class="menu-link">
           <a class="${
-            currentUrl === "http://127.0.0.1:5500/index.html" && "link-line"
+            currentUrl.endsWith("index.html") && "link-line"
           }" href="menu.html">Menu<span class="menu-link_icon"></span></a>
           
         </div>
