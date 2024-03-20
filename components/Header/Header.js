@@ -19,19 +19,19 @@ class Header {
               <a class="link-line" href="${
                 currentUrl.endsWith("index.html")
                   ? "#favorite-coffee"
-                  : "/#favorite-coffee"
+                  : "/index.html#favorite-coffee"
               }"
                 >Favorite coffee</a
               >
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
-                currentUrl.endsWith("index.html") ? "#about" : "/#about"
+                currentUrl.endsWith("index.html") ? "#about" : "/index.html#about"
               }">About</a>
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
-                currentUrl.endsWith("index.html") ? "#mobile" : "/#mobile"
+                currentUrl.endsWith("index.html") ? "#mobile" : "/index.html#mobile"
               }">Mobile app</a>
             </li>
             <li class="header-menu_item">
