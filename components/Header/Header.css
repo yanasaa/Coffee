@@ -1,0 +1,122 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  font-weight: 600;
+  line-height: 150%;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.logo a img {
+  display: block;
+}
+.header-menu__content {
+  display: flex;
+
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-menu_items {
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+.header-menu_items ul {
+  display: flex;
+
+  gap: 40px;
+  justify-content: center;
+}
+
+.header-menu_item {
+  list-style: none;
+  align-self: center;
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.enjoy-menu_button .menu-link_icon {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.enjoy-menu_button:hover .menu-link_icon {
+  opacity: 1;
+}
+.menu-link_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../../img/cup.svg);
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+.link-line {
+  position: relative;
+}
+.link-line:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: var(--border-dark); /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.link-line:hover:after,
+.link-line:focus:after {
+  width: 100%;
+}
+
+.header-menu.burger-open .header-menu__content {
+  right: 0;
+  transition: 3s;
+}
+.burger-close .header-menu__content {
+  right: -100%;
+  transition: 3s;
+}
+
+.header-menu.burger-open .menu-link {
+  align-self: start;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  border: 1px solid var(--border-dark);
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 19px;
+  margin: 4px;
+  border: 1.5px solid var(--border-dark);
+}
+
+.burger-open .burger-line {
+  transform: rotate(45deg);
+  position: absolute;
+  transition: 2s ease-out;
+}
+
+.burger-open .burger-line:last-child {
+  transform: rotate(-45deg);
+}
+.burger-close .burger-line {
+  transition: 2s ease-out;
+}
