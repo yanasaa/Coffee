@@ -1,0 +1,47 @@
+:root {
+  font-family: "Inter", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  --main-bg-color: #e1d4c9;
+  --text-dark: #403f3d;
+  --text-accent: #b0907a;
+  --text-light: #e1d4c9;
+  --border-dark: #665f55;
+  --border-light: #c1b6ad;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 0 40px;
+}
+
+.container {
+  max-width: 1360px;
+  margin: auto;
+  overflow: hidden;
+}
+.section-title {
+  color: var(--text-dark);
+  padding-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+.acent-color {
+  color: var(--text-accent);
+  font-style: italic;
+}

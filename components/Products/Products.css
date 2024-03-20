@@ -1,0 +1,49 @@
+.menu-gallery {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--secondary-bg);
+  border-radius: 40px;
+  width: 310px;
+}
+
+.card img {
+  vertical-align: top;
+  border-radius: 40px;
+  transition: all 0.5s ease-in-out;
+}
+.card img:hover {
+  transform: scale(0.9);
+}
+
+.card-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.card-text {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  padding: 15px 0;
+  flex-grow: 1;
+}
+
+.card-price {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
