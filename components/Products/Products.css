@@ -16,14 +16,30 @@
 }
 
 .menu-button {
+  cursor: pointer;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: var(--main-bg-color);
-  padding: 8px;
+  padding: 8px 16px 8px 8px;
   margin: 0 10px;
   border-radius: 40px;
   border: 1px solid var(--secondary-bg);
+  transition: all .5s;
+}
+
+.menu-button.active-tag {
+  background-color: var(--secondary-bg);
+  cursor: default;
+}
+.menu-button.active-tag .menu-button-img {
+  background-color: var(--main-bg-color);
+}
+.menu-button:hover .menu-button-img {
+  background-color: var(--main-bg-color);
+}
+.menu-button:hover {
+  background-color: var(--secondary-bg);
 }
 
 .menu-button-img {
@@ -65,7 +81,7 @@
   transition: background-size 0.5s ease-in-out;
 }
 
-.card-img:hover {
+.card:hover .card-img {
   background-size: 100%;
 }
 
@@ -94,5 +110,4 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
- 
 }

@@ -115,6 +115,15 @@
   border: 1px solid var(--border-dark);
   position: absolute;
   top: 43%;
+  padding: 20px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.slider-btn:hover {
+  background-color: var(--border-dark);
+}
+.slider-btn:hover .slider-btn__icon {
+  background: var(--main-bg-color);
 }
 
 .slider-btn-prev {
@@ -123,6 +132,19 @@
 
 .slider-btn-next {
   right: 0;
+}
+.slider-btn__icon {
+  display: block;
+  width: 16px;
+  height: 14px;
+  background: var(--border-dark);
+}
+
+.slider-btn__icon_right {
+  mask: url("../../img/icons/arrow-right.svg");
+}
+.slider-btn__icon_left {
+  mask: url("../../img/icons/arrow-left.svg");
 }
 
 .slider-controls {
@@ -220,20 +242,36 @@
   padding: 12px 20px;
   margin-right: 20px;
   text-align: left;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.mobile-btn:hover {
+  background: var(--border-dark);
+  color: var(--main-bg-color);
+}
+
+.mobile-btn:hover .mobile-btn__icon {
+  background: var(--main-bg-color);
+  color: var(--main-bg-color);
+}
+.mobile-btn:hover * {
+  color: var(--main-bg-color);
 }
 
 .mobile-btn__icon {
   display: inline-block;
   width: 36px;
   height: 36px;
+  background: var(--border-dark);
 }
 
 .mobile-btn__icon_apple {
-  background-image: url("../../img/icons/apple-icon.svg");
+  mask: url("../../img/icons/apple-icon.svg");
 }
 
 .mobile-btn__icon_google {
-  background-image: url("../../img/icons/google-icon.svg");
+  mask: url("../../img/icons/google-icon.svg");
 }
 
 .mobile-btn__text > * {
@@ -243,6 +281,7 @@
   margin-left: 8px;
   line-height: 150%;
 }
+
 .mobile-btn__text_small {
   font-size: 10px;
   font-weight: 600;

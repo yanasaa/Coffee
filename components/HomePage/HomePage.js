@@ -88,16 +88,11 @@ class HomePage {
               </div>
             </div>
             <button class="slider-btn slider-btn-prev">
-              <img
-                src="img/arrowLeft.png"
-                alt="Arrow left"
-              />
+            <span class="slider-btn__icon slider-btn__icon_left"></span>
             </button>
             <button class="slider-btn slider-btn-next">
-              <img
-                src="img/arrowRight.png"
-                alt="Arrow right"
-              />
+            <span class="slider-btn__icon slider-btn__icon_right"></span>
+              
             </button>
             <div class="slider-controls">
               <div class="slider-controller">

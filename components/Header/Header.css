@@ -39,7 +39,6 @@
 .menu-link {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .enjoy-menu_button .menu-link_icon {
   position: absolute;
@@ -59,6 +58,7 @@
 }
 .link-line {
   position: relative;
+  cursor: pointer;
 }
 .link-line:after {
   display: block;

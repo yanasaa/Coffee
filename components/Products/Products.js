@@ -26,7 +26,7 @@ class Products {
     <span class="acent-color">amazing surprise</span>
   </h1>
   <div class="menu-buttons">
-  <button class="menu-button">
+  <button class="menu-button active-tag">
     <img
       class="menu-button-img"
       src="img/icons/iconcoffee.png"

@@ -1,7 +1,9 @@
 let currentUrl = window.location.href;
+const homeLink = window.location.origin;
 
 class Header {
   render() {
+    console.log(homeLink);
     let headerLinks = `<div class="container">
     <div class="header-menu burger-close" id="header-menu">
       <div class="logo">
@@ -18,7 +20,7 @@ class Header {
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("menu.html")
-                  ? "/#favorite-coffee"
+                  ? homeLink + "/#favorite-coffee"
                   : "#favorite-coffee"
               }"
                 >Favorite coffee</a
@@ -26,13 +28,15 @@ class Header {
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
-                currentUrl.endsWith("menu.html") ? "/#about" : "#about"
+                currentUrl.endsWith("menu.html")
+                  ? homeLink + "/#about"
+                  : "#about"
               }">About</a>
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("index.html")
-                  ? "#mobile"
+                  ? homeLink + "#mobile"
                   : "/index.html#mobile"
               }">Mobile app</a>
             </li>
@@ -42,10 +46,11 @@ class Header {
           </ul>
         </nav>
         <div class="menu-link">
-          <a class="${
-            currentUrl.endsWith("index.html") && "link-line"
-          }" href="menu.html">Menu<span class="menu-link_icon"></span></a>
-          
+        ${
+          currentUrl.endsWith("menu.html")
+            ? `<span>Menu<span class="menu-link_icon"></span></span>`
+            : `<a class="link-line" href="menu.html">Menu<span class="menu-link_icon"></span></a>`
+        }         
         </div>
       </div>
       <div class="burger-menu" id="burger-button">
