@@ -29,7 +29,7 @@ class Products {
   <button class="menu-button">
     <img
       class="menu-button-img"
-      src="../../img/icons/iconcoffee.png"
+      src="img/icons/iconcoffee.png"
       alt="Coffee icon"
     />
     <span class="menu-button-text">Coffee</span>
@@ -37,7 +37,7 @@ class Products {
   <button class="menu-button">
     <img
       class="menu-button-img"
-      src="../../img/icons/icontea.png"
+      src="img/icons/icontea.png"
       alt="Tea icon"
     />
     <span class="menu-button-text">Tea</span>
@@ -45,7 +45,7 @@ class Products {
   <button class="menu-button">
     <img
       class="menu-button-img"
-      src="../../img/icons/icondes.png"
+      src="img/icons/icondes.png"
       alt="Dessert icon"
     />
     <span class="menu-button-text">Dessert</span>

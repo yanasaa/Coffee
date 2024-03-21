@@ -17,21 +17,23 @@ class Header {
           <ul>
             <li class="header-menu_item">
               <a class="link-line" href="${
-                currentUrl.endsWith("index.html")
-                  ? "#favorite-coffee"
-                  : "/index.html#favorite-coffee"
+                currentUrl.endsWith("menu.html")
+                  ? "/#favorite-coffee"
+                  : "#favorite-coffee"
               }"
                 >Favorite coffee</a
               >
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
-                currentUrl.endsWith("index.html") ? "#about" : "/index.html#about"
+                currentUrl.endsWith("menu.html") ? "/#about" : "#about"
               }">About</a>
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
-                currentUrl.endsWith("index.html") ? "#mobile" : "/index.html#mobile"
+                currentUrl.endsWith("index.html")
+                  ? "#mobile"
+                  : "/index.html#mobile"
               }">Mobile app</a>
             </li>
             <li class="header-menu_item">
