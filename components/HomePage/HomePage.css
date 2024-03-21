@@ -158,28 +158,31 @@
 }
 
 .about-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px 40px;
+  display: flex;
+
+  gap: 40px;
   justify-content: center;
+  max-height: 1100px;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.about-img img {
+.about-img {
+  border-radius: 20px;
   height: 590px;
   width: 660px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-.about-img img:hover {
-  transform: scale(0.9);
+  background-image: url("../../img/about-1.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: all 0.5s ease-in-out;
 }
-.about-img-secondary img {
-  height: 430px;
-  width: 660px;
+
+.about-img:hover {
+  background-size: 100%;
 }
 
-.about-img:last-child {
-  margin-top: -160px;
+.about-img-secondary {
+  height: 430px;
 }
 
 /*MOBILE section*/

@@ -123,30 +123,15 @@ class HomePage {
             friends, or get some work done.
           </h2>
           <div class="about-images">
-            <div class="about-img">
-              <img
-                src="img/about-1.jpg"
-                alt="Girl drinks coffee photo"
-              />
+            <div class="about-img" style="background-image: url('../../img/about-1.jpg');">
+              
             </div>
-            <div class="about-img about-img-secondary">
-              <img
-                src="img/about-3.jpg"
-                alt="Cup of coffee photo"
-              />
-            </div>
-            <div class="about-img about-img-secondary">
-              <img
-                src="img/about-2.jpg"
-                alt="Man drinks coffee photo"
-              />
-            </div>
-            <div class="about-img">
-              <img
-                src="img/about-4.jpg"
-                alt="Couple drink coffee photo"
-              />
-            </div>
+            <div class="about-img about-img-secondary" style="background-image: url('../../img/about-2.jpg');">
+               </div>
+            <div class="about-img about-img-secondary" style="background-image: url('../../img/about-3.jpg');">
+                         </div>
+            <div class="about-img" style="background-image: url('../../img/about-4.jpg');">
+               </div>
           </div>
         </div>
       </section>
