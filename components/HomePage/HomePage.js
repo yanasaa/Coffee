@@ -123,14 +123,14 @@ class HomePage {
             friends, or get some work done.
           </h2>
           <div class="about-images">
-            <div class="about-img" style="background-image: url('../../img/about-1.jpg');">
+            <div class="about-img" style="background-image: url('img/about-1.jpg');">
               
             </div>
-            <div class="about-img about-img-secondary" style="background-image: url('../../img/about-2.jpg');">
+            <div class="about-img about-img-secondary" style="background-image: url('img/about-2.jpg');">
                </div>
-            <div class="about-img about-img-secondary" style="background-image: url('../../img/about-3.jpg');">
+            <div class="about-img about-img-secondary" style="background-image: url('img/about-3.jpg');">
                          </div>
-            <div class="about-img" style="background-image: url('../../img/about-4.jpg');">
+            <div class="about-img" style="background-image: url('img/about-4.jpg');">
                </div>
           </div>
         </div>
