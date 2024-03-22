@@ -32,23 +32,38 @@
 }
 
 .contacts-text,
-.contacts-text > a {
+.contacts-text > * {
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
   padding-bottom: 16px;
-}
-.contacts-text__line {
-  color: var(--text-light);
-  padding-left: 5px;
+  color: var(--main-bg-color);
 }
 
+.contacts-text__icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+margin-right: 5px;
+vertical-align: text-bottom;
+}
+.contacts-text__icon_address {
+  background: url("../../img/icons/address.svg");
+}
+.contacts-text__icon_phone {
+  background: url("../../img/icons/phone.svg");
+}
+.contacts-text__icon_clock {
+  background: url("../../img/icons/clock.svg");
+}
+.contacts-text .link-line:after {
+  background-color: var(--main-bg-color);
+}
 .social-icons {
   display: flex;
   color: var(--border-light);
   gap: 12px;
 }
-
 .social-icon {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -75,7 +90,7 @@
   mask: url("../../img/icons/twitter.svg")
 }
 .social-icon_instagram {
-  mask: url("img/icons/instagram.svg")
+  mask: url("../../img/icons/instagram.svg")
 }
 .social-icon_facebook {
   mask: url("../../img/icons/facebook.svg")
