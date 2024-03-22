@@ -29,14 +29,14 @@ class Header {
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("menu.html")
-                  ? homeLink + "Coffee/index.html/#about"
+                  ? homeLink + "/Coffee/index.html/#about"
                   : "#about"
               }">About</a>
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("index.html")
-                  ? "Coffee/index.html#mobile"
+                  ? homeLink + "/Coffee/index.html#mobile"
                   : "#mobile"
               }">Mobile app</a>
             </li>
