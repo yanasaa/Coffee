@@ -20,7 +20,7 @@ class Header {
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("menu.html")
-                  ? homeLink + "/#favorite-coffee"
+                  ? "/Coffee/index.html#favorite-coffee"
                   : "#favorite-coffee"
               }"
                 >Favorite coffee</a
@@ -29,14 +29,14 @@ class Header {
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("menu.html")
-                  ? homeLink + "/#about"
+                  ? "Coffee/index.html/#about"
                   : "#about"
               }">About</a>
             </li>
             <li class="header-menu_item">
               <a class="link-line" href="${
                 currentUrl.endsWith("index.html")
-                  ? "index.html" + "#mobile"
+                  ? "Coffee/index.html#mobile"
                   : "#mobile"
               }">Mobile app</a>
             </li>
